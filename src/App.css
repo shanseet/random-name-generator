@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
+    padding: 5em;
+    font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-2 {
+    font-family: 'Staatliches' !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topnav {
+    background-color: #38726c;
+    overflow: hidden;
+    color: #fafafa;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.name-item {
+    padding: 0.4em 0;
+    font-size: 1rem;
+    display: inline-block;
+    width: 10.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.remove-name {
+    background-color: #f1f1f1;
+    color: #fff;
+    cursor: pointer;
+    display:inline-block;
+    width: 1.2em;
+    text-align: center;
+    transition: background-color 0.1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove-name:hover {
+    background-color: #38726c;
+}
+
+.box {
+    padding: 1em 7em 1em 1em;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    line-height: 1em;
+}
+
+input[type="text"] {
+    margin-top: 1em;
+    line-height: 1.8em;
+    font-family: "Open Sans", sans-serif;
+}
+
+button.submit-btn {
+    border-style: solid;
+    background-color: #f28123;
+    border-color: #f28123;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1em;
+    line-height: 1.8em;
+}
+
+button.rand-btn {
+    position: absolute;
+    width: 6rem;
+    height: 100%;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Staatliches', cursive;
 }
